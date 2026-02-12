@@ -428,32 +428,98 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
     header h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
-    
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 50px;
+    }
+
+    /* About Section */
     .about-content {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
     }
 
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Projects Section — MAIN FIX */
     #projects .container {
-        padding: 0 5px; 
+        padding: 0 12px;
     }
 
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;   /* SINGLE COLUMN */
+        gap: 25px;
     }
 
+    .project-card img {
+        height: auto;
+        max-height: 220px;
+    }
+
+    .project-card-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .project-card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-card-content p {
+        font-size: 0.95rem;
+    }
+
+    .project-buttons {
+        flex-direction: column;   /* STACK BUTTONS */
+        gap: 12px;
+    }
+
+    .project-buttons .btn {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    /* Skills Section */
     .skills-table {
         grid-template-columns: 1fr;
         padding: 20px;
-        gap: 40px;
+        gap: 30px;
     }
 
     .skill-column:not(:last-child) {
         border-right: none;
         border-bottom: 1px solid #e9ecef;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 25px;
     }
 }
