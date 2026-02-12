@@ -1,4 +1,4 @@
-# Aditya Verma - Data Analyst Portfolio
+# Aditya Verma - Data Analyst Portfolio 📜
 
 Welcome! To my portfolio repository.
 
